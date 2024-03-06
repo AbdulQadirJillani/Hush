@@ -1,0 +1,123 @@
+.qawrapper {
+    width: 80%;
+    margin: 1.5em auto;
+}
+
+
+
+/* Header Styles */
+
+.qainfo {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text);
+    margin: 0.6em 0;
+}
+
+.qainfo > p {
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.qainfo > p:first-child {
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+
+
+/* Footer Styles */
+
+.btnlayout {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6em 0;
+}
+
+.btn, .disabledbtn {
+    background-color: var(--btncolor);
+    color: var(--btntxtcolor);
+    border: none;
+    padding: 0.3em 0.8em;
+    border-radius: 0.3em;
+}
+
+.disabledbtn {
+    opacity: 0.6;
+}
+
+
+
+/* Main Styles */
+
+.question {
+    color: var(--text);
+    font-size: 1.1em;
+    margin: 1em 0;
+}
+
+.option, .optionCorrect, .optionWrong, .showbtn {
+    color: var(--text);
+    list-style: none;
+    padding: 0.3em 0.8em;
+    margin: 0.6em 0;
+    border-radius: 0.3em;
+}
+
+.option, .showbtn {
+    background-color: var(--primary);
+}
+
+.optionCorrect {
+    background-color: var(--optioncorrect);
+}
+
+.optionWrong {
+    background-color: var(--optionwrong);
+}
+
+.option:hover, .showbtn:hover {
+    background-color: var(--background);
+}
+
+.showbtn {
+    width: 50%;
+    border: none;
+}
+
+
+
+/* Modal Styles */
+
+dialog {
+    width: 50%;
+    margin: auto;
+    background-color: var(--background);
+    color: var(--text);
+    text-align: center;
+    border: none;
+    box-shadow: -1px 1px 5px var(--secondary);
+    border-radius: 1em;
+}
+
+dialog p {
+    margin: 1em 0.3em;
+}
+
+dialog button {
+    margin: 1em 0;
+    padding: 0.3em 0.8em;
+    background-color: var(--btncolor);
+    border-radius: 0.3em;
+}
+
+dialog .homebtn {
+    text-decoration: none;
+    color: var(--btntxtcolor);
+}
+
+dialog::backdrop {
+    background-color: black;
+    opacity: 0.7;
+}

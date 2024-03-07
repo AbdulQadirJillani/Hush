@@ -50,6 +50,7 @@ export default function Header() {
             <li><Link to='1st-year' onClick={toggle}>1st Year</Link></li>
             <li><Link to='2nd-year' onClick={toggle}>2nd Year</Link></li>
             <li><Link to='3rd-year' onClick={toggle}>3rd Year</Link></li>
+            <li><Link to='amboss' onClick={toggle}>Amboss</Link></li>
             <li><DarkMode tog={toggle}/></li>
         </ul>
 

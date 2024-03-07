@@ -86,7 +86,14 @@
     border: none;
 }
 
+.explanationhide {
+    display: none;
+}
 
+.explanationshow {
+    padding-top: 0.5em;
+    font-size: 0.8em;
+}
 
 /* Modal Styles */
 

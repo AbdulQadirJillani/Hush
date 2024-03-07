@@ -124,3 +124,8 @@
 .link:hover, .link:focus {
     color: var(--accent);
 }
+
+.ambosspage {
+    text-align: center;
+    margin-top: 1em;
+}

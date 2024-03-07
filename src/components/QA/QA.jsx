@@ -11,6 +11,8 @@ export default function QA(props) {
     const [lock, setLock] = useState(false)
     const [lockcounter, setLockCounter] = useState(0)
     const currentQA = qaArray[index]
+    const iarr = currentQA.info.split('/')
+    const info = `${iarr[1]} - ${iarr[2]}`
 
     function decrement() {
         setIndex((prevIndex) => prevIndex - 1)
@@ -51,7 +53,7 @@ export default function QA(props) {
 
         <header className={styles.qainfo}>
             <p>
-                {currentQA.info}
+                {info}
             </p>
 
             <p>

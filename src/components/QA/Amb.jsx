@@ -7,6 +7,7 @@ export default function Amb(props) {
     const [index, setIndex] = useState(0)
     const [optionIndex, setOptionIndex] = useState(null)
     const [ansIndex, setAnsIndex] = useState(null)
+    const [hintstate, setHintstate] = useState(false)
     const [score, setScore] = useState(0)
     const [lock, setLock] = useState(false)
     const [lockcounter, setLockCounter] = useState(0)
@@ -16,6 +17,7 @@ export default function Amb(props) {
         setIndex((prevIndex) => prevIndex - 1)
         setOptionIndex(null)
         setAnsIndex(null)
+        setHintstate(false)
         setLock(true)
         setLockCounter(prevLockCounter => prevLockCounter - 1)
     }
@@ -24,6 +26,7 @@ export default function Amb(props) {
         setIndex((prevIndex) => prevIndex + 1)
         setOptionIndex(null)
         setAnsIndex(null)
+        setHintstate(false)
         if (lockcounter < 0) setLockCounter(prevLockCounter => prevLockCounter + 1)
         if (lockcounter === 0) setLock(false)
         else setLock(true)
@@ -66,6 +69,14 @@ export default function Amb(props) {
             className={styles.question}>
                 {currentQA.question}
             </p>
+
+            <div className={styles.questionextra}>
+                <button className={styles.hintbtn} onClick={() => setHintstate(true)}>Hint</button>
+                <p>Difficulty: {currentQA.difficulty}</p>
+            </div>
+            <p className={hintstate ? styles.hintshow : styles.hinthide}>{currentQA.hint}</p>
+            
+            <hr />
 
             <ol>
                 {

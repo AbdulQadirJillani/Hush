@@ -21,9 +21,6 @@
     padding: 1em;
     border-radius: 0.5em;
     position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .modulewrapper::before,
@@ -44,63 +41,15 @@
         hsl(269, 100%, 61%, var(--opacity)),
         hsl(202, 100%, 56%, var(--opacity)));
     animation: rotation 10s linear infinite;
-    filter: blur(0.1rem);
+    filter: blur(0.5rem);
 }
 
 .modulewrapper::after {
     inset: -0.3rem;
     z-index: -100;
     background-color: var(--background);
+    opacity: 0.8;
 } 
-
-.foundation {
-    background-image: url('./images-transparent/foundation-transparent.png');
-}
-
-.blood {
-    background-image: url('./images-transparent/blood-transparent.png');
-}
-
-
-.locomotor {
-    background-image: url('./images-transparent/locomotor-transparent.png');
-}
-
-.respiratory {
-    background-image: url('./images-transparent/respiratory-transparent.png');
-}
-
-.cardiovascular {
-    background-image: url('./images-transparent/cardiovascular-transparent.png');
-}
-
-.neuroscience {
-    background-image: url('./images-transparent/neuroscience-transparent.png');
-}
-
-.headneck {
-    background-image: url('./images-transparent/head-and-neck-transparent.png');
-}
-
-.endocrinology {
-    background-image: url('./images-transparent/endo-transparent.png');
-}
-
-.gastrointestinal {
-    background-image: url('./images-transparent/gastrointestinal-transparent.png');
-}
-
-.renal {
-    background-image: url('./images-transparent/renal-transparent.png');
-}
-
-.reproductive {
-    background-image: url('./images-transparent/reproductive-transparent.png');
-}
-
-.infectious {
-    background-image: url('./images-transparent/infectious-transparent.png');
-}
 
 .moduleheading {
     color: var(--text);

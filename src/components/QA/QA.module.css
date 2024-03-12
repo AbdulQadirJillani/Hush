@@ -57,6 +57,35 @@
     margin: 1em 0;
 }
 
+.questionextra {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6em 0;
+}
+
+.questionextra p {
+    color: var(--text);
+}
+
+.hintbtn {
+    color: var(--text);
+    background-color: var(--background);
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hinthide {
+    display: none;
+}
+
+.hintshow {
+    font-size: 0.9em;
+    text-align: center;
+    padding-bottom: 0.5em;
+    color: var(--text);
+}
+
 .option, .optionCorrect, .optionWrong, .showbtn {
     color: var(--text);
     list-style: none;

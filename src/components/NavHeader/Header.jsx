@@ -47,16 +47,13 @@ export default function Header() {
         </button>
 
         <ul className={active ? `${styles.menuitems} ${styles.activemenuitems}`: styles.menuitems}>
-            <li><Link to='1st-year' onClick={toggle}>1st Year</Link></li>
-            <li><Link to='2nd-year' onClick={toggle}>2nd Year</Link></li>
-            <li><Link to='3rd-year' onClick={toggle}>3rd Year</Link></li>
             <li><Link to='amboss' onClick={toggle}>Amboss</Link></li>
             <li><DarkMode tog={toggle}/></li>
         </ul>
 
         <Link className={styles.logo} to='.'>
           <img src={logo} alt="" />
-          <h1>MedEval</h1>
+          <h1>Hush</h1>
         </Link>
 
       </div>

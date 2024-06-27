@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './QA.module.css'
 import { Link } from 'react-router-dom'
 
@@ -80,7 +80,7 @@ export default function Amb(props) {
 
             <ol>
                 {
-                currentQA.answers.map((opt, index) => 
+                currentQA.answers.sort((a, b)=>(b.option.length - a.option.length)).map((opt, index) => 
                 <li
                 key={index} 
                 className={(index===optionIndex || index===ansIndex) ? 
